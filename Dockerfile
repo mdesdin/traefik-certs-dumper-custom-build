@@ -1,9 +1,9 @@
 # syntax=docker/dockerfile:1.4
 
 # Pin by digest for reproducibility.
-# Use: docker buildx imagetools inspect ghcr.io/ldez/traefik-certs-dumper:<VERSION>
+# Use: docker buildx imagetools inspect ldez/traefik-certs-dumper:<VERSION>
 # Replace <DIGEST> with the real one you get from the command above.
-FROM ghcr.io/ldez/traefik-certs-dumper:v2.10@sha256:fcf105172378d14dc93d17169adf70bf75088625c2775daa5d4ce1ff42baf258
+FROM ldez/traefik-certs-dumper:v2.11.0@sha256:67d7f7649f68efbc97a422e85a551ac063ce2146611ec2bd81c87ff35ddbd5a3
 
 ARG TARGETPLATFORM
 ARG STALWART_VERSION=v0.15.4
