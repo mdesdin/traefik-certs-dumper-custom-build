@@ -37,9 +37,6 @@ RUN set -eux; \
     curl -fsSL "${URL}" | tar xz -C /opt/bin; \
     chmod 0755 /opt/bin/stalwart-cli
 
-# Add root user to postgres group (group comes with postgresql-client packages)
-RUN addgroup root postgres || true
-
 # -----------------------------
 # COPY hooks (reproducible)
 # -----------------------------
